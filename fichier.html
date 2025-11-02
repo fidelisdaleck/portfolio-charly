@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Compétences</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 40px;
+    }
+
+    .skills-section {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    .skills-section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 12px;
+    }
+
+    .progress {
+      height: 12px;
+      background-color: #3498db;
+      width: 0;
+      transition: width 1s ease-in-out;
+      border-radius: 10px;
+    }
+
+    /* Couleurs différentes selon le niveau */
+    .html .progress { background-color: #e44d26; }
+    .css .progress { background-color: #1572b6; }
+    .js .progress { background-color: #f7df1e; }
+    .php .progress { background-color: #787cb5; }
+    .mysql .progress { background-color: #00618a; }
+  </style>
+</head>
+<body>
+
+  <section class="skills-section">
+    <h2>Mes Compétences</h2>
+
+    <div class="skill html">
+      <div class="skill-name">
+        <span>HTML</span><span>90%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width:90%"></div>
+      </div>
+    </div>
+
+    <div class="skill css">
+      <div class="skill-name">
+        <span>CSS</span><span>85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width:85%"></div>
+      </div>
+    </div>
+
+    <div class="skill js">
+      <div class="skill-name">
+        <span>JavaScript</span><span>75%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width:75%"></div>
+      </div>
+    </div>
+
+    <div class="skill php">
+      <div class="skill-name">
+        <span>PHP</span><span>70%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width:70%"></div>
+      </div>
+    </div>
+
+    <div class="skill mysql">
+      <div class="skill-name">
+        <span>MySQL</span><span>80%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width:80%"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    // JS non obligatoire ici — exemple pour évoluer plus tard
+    console.log("Section compétences chargée avec succès !");
+  </script>
+
+</body>
+</html>

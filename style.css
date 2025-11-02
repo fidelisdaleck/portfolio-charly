@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: sans-serif;
+}
+
+.bar-nav a:hover{
+    color: rgb(143, 34, 143);
+}
+.banner{
+    margin-bottom: 200px;
+}
+.banner .descript p{
+    font-size: 28px;
+    margin-left: 100px;
+}
+.banner .descript button{
+    margin: 30px 0px 0px 100px;
+    border: none;
+    color: white;
+    background-color:  rgb(180, 34, 180);
+    border-radius: 7px;
+    padding: 10px;
+}
+.banner .descript button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(180, 34, 180); 
+}
+.banner .descript button a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.banner .descript button a:hover{
+    color: black;
+}
+.banner .img img{
+    border-radius: 15px;
+}
+.about{
+    background-color: var(--bs-gray-200);
+    padding: 50px 0px 50px 0px;
+}
+.about h1{
+    margin-bottom: 60px;
+}
+.about .img img{
+    border-radius: 50%;
+    margin-left: 150px;
+    border: 5px solid  rgb(180, 34, 180);
+}
+.about .about-me p{
+    margin-right: 100px;
+    font-size: 18px;
+}
+.about .about-me button{
+    margin: 30px 0px 0px 5px;
+    border: none;
+    color: white;
+    background-color:  rgb(180, 34, 180);
+    border-radius: 7px;
+    padding: 10px;
+}
+.about .about-me button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(180, 34, 180); 
+}
+.about .about-me button a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.about .about-me button a:hover{
+    color: black;
+}
+.projet h1{
+    margin-bottom: 50px;
+}
+.projet .projets{
+    display: flex;
+    gap: 20px
+}
+.projet .projets .projet1{
+    width: 280px;
+    height: auto;
+    padding: 0px 1px 0px 1px;
+    background-color: var(--bs-gray-200);
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.projet .projets .projet1 p{
+    padding: 20px 15px 20px 15px;
+    font-size: 18px;
+}
+.projet .projets .projet1 img{
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    heigth: 150px;
+}
+.projet .projets .projet1 button{
+    border: none;
+    color: white;
+    background-color:  rgb(180, 34, 180);
+    border-radius: 7px;
+    padding: 10px;
+    margin:0px 0px 10px 20px;
+}
+.projet .projets .projet1 button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(180, 34, 180); 
+}
+.projet .projets .projet1 button a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.projet .projets .projet1 button a:hover{
+    color: black;
+}
+.skills-section{
+    margin-top: 100px;
+}
+.skill-section{
+   
+}
+.skills{
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+    .skills-section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .skills{
+      margin-bottom: 50px;
+    }
+
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 12px;
+    }
+
+    .progress {
+      height: 12px;
+      background-color: #3498db;
+      width: 0;
+      transition: width 1s ease-in-out;
+      border-radius: 10px;
+    }
+
+    /* Couleurs différentes selon le niveau */
+    .html .progress { background-color:  #f1df; }
+    .css .progress { background-color:#f9af; }
+    .js .progress { background-color: #f4fc; }
+    .gestion .progress { background-color: #f1df; }
+    .resolution .progress { background-color: #f9af; }
+    .adapt .progress { background-color: #f4fc; }
+
+
+.contenu{
+    background-color: var(--bs-gray-200);
+     color:  rgb(180, 34, 180);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     padding: 20px;
+}
+ 
+.contact-container {
+     background: white;
+     max-width: 480px;
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 8px 20px rgba(32, 78, 32, 0.15);
+     padding: 30px 40px;
+ }
+ 
+ h1 {
+     color:  rgb(180, 34, 180);
+     margin-bottom: 20px;
+     text-align: center;
+     font-weight: 700;
+     font-size: 2.2rem;
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+ }
+ 
+ label {
+     font-weight: 600;
+     margin-bottom: 6px;
+     color:  rgb(180, 34, 180);
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+     padding: 12px 15px;
+     border: 2px solid  rgb(130, 30, 120);
+     border-radius: 6px;
+     font-size: 1rem;
+     transition: border-color 0.3s ease;
+     resize: vertical;
+ }
+ 
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ textarea:focus {
+     border-color:  rgb(180, 34, 180);
+     outline: none;
+ }
+ 
+ textarea {
+     min-height: 100px;
+ }
+ 
+ button {
+     background-color:  rgb(180, 34, 180);
+     color: white;
+     border: none;
+     padding: 14px;
+     font-size: 1.1rem;
+     font-weight: 700;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin-top: 10px;
+ }
+ 
+ button:hover {
+    background-color: transparent;
+    border: 2px solid  rgb(180, 34, 180);
+    color: black;
+ }
+ 
+ .contact-info {
+     margin-top: 30px;
+     font-size: 0.9rem;
+     color:  rgb(180, 34, 180);
+     text-align: center;
+ }
+ 
+ .contact-info p {
+     margin-bottom: 8px;
+ }
+footer .footer{
+    padding: 50px;
+}
+footer .footer li{
+    list-style: none;
+}
+footer .footer ul{
+     display: flex;
+    gap: 20px;
+}
+
+footer .footer p{
+    color: white;
+}
+
+
+
+/* responsive design */
+@media (max-width: 768px){
+    .banner .img img{
+        width: 320px;
+        margin-top: 30px;
+    }
+    .about .img img{
+        margin: 0px 0px 30px 20px;
+    }
+    .banner .descript p{
+        margin-left: 20px;
+    }
+    .banner .descript button{
+        margin: 20px;
+    }
+    .about .about-me p{
+        margin: 0px 15px 20px 10px;
+    }
+    .projet .projets{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .projet .projets .projet1{
+        width: 300px;
+    }
+}
