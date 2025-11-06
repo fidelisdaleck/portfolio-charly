@@ -34,14 +34,14 @@
       <!-- section-banniere -->
       <section>
         <div class="row banner">
-          <div class="descript col">
+          <div class="descript col reveal">
             <p>
               Je suis <span style="color: rgb(143, 34, 143);">NDODEH Charly</span>, Développeur
               web en devenir passionné par le design d'interface et le code.
             </p>
               <a href=""><button type="button">Voir mes projets</button></a>
           </div>
-          <div class="img-fluid col img">
+          <div class="img-fluid col img reveal">
             <img src="images/comment-devenir-un-developpeur-web.jpeg" alt="description du travail" width="450px">
           </div>
         </div>
@@ -50,51 +50,51 @@
       <!-- section about -->
       <section>
         <div class="row about mt-5" id="about">
-          <h1 style="color: purple" class="text-center">A propos de moi.</h1>
-          <div class="img-fluid col img">
+          <h1 style="color: purple" class="text-center reveal">A propos de moi.</h1>
+          <div class="img-fluid col img reveal">
             <img src="images/IMG-20250827-WA0033.jpg" alt="description du travail" width="300px" height="300px">
           </div>
           <div class="about-me col">
-            <p>
+            <p class="reveal">
               Je m'appelle <span style="color: rgb(143, 34, 143);">NDODEH Charly</span>,
               passionné par la creation de site web modernes et interactifs.
             </p>
 
-            <p>
+            <p class="reveal">
               Je suis actuellement etudiant a l'institut universitaire des technologies de Douala (IUT),
               etudiant en <span style="color: rgb(143, 34, 143);">Genie informatique</span> et je cherche a ameliorer 
               mes competences en HTML, CSS, JavaScript.
             </p>
-            <p>
+            <p class="reveal">
               J'aime transformer mes idees en projets concrets et les experimenter avec de nouvelles technologies.
             </p>
-            <a href="" download="mon-CV.pdf"><button type="button"><i class="bi bi-download" style="color: black;"></i> &nbsp; Telecharger mon CV</button></a>
+            <a href="" download="mon-CV.pdf" class="reveal"><button type="button"><i class="bi bi-download" style="color: black;"></i> &nbsp; Telecharger mon CV</button></a>
           </div>
         </div>
       </section>
 
       <!-- section-Mes projets -->
-       <section class="mt-5 projet container-fluid" id="projet">
+       <section class="mt-5 projet container-fluid reveal" id="projet">
         <h1 style="color: purple" class="text-center">Mes projets.</h1>
         <div class="projets row">
-          <div class="projet1">
+          <div class="projet1 reveal" >
             <img class="img-fluid" src="images/background.jpg" alt="parfum" width="300px" height="150px">
             <p>Site statique de vente de parfum </br> <span style="font-weight: bold;"> HTML/CSS </span> </p>
             <a href=""><button>Voir</button></a>
           </div>
 
-           <div class="projet1">
+           <div class="projet1 reveal">
             <img class="img-fluid" src="images/background3.jpg" alt="background-cake" width="300px" height="150px">
             <p>Site vitrine de vente de produits patissiers </br> <span style="font-weight: bold;"> HTML/CSS </span> </p>
             <a href=""><button>Voir</button></a>
           </div>
 
-          <div class="projet1">
+          <div class="projet1 reveal">
             <img class="img-fluid" src="images/sanga1.jpg" alt="Mon restaurant" width="300px" height="150px">
             <p>Site vitrine d'un mini restaurant camerounais </br> <span style="font-weight: bold;"> HTML/CSS </span> </p>
             <a href=""><button>Voir</button></a>
           </div>
-          <div class="projet1">
+          <div class="projet1 reveal">
             <img class="img-fluid" src="images/burger.png" alt="Mon restaurant" width="300px" height="150px">
             <p>Site web d'un restau fast-food</br> <span style="font-weight: bold;"> HTML/CSS </span> </p>
             <a href=""><button>Voir</button></a>
@@ -104,12 +104,12 @@
        </section>
 
       <!-- section-mes competences -->
-    <section class="skills-section" id="competence">
+    <section class="skills-section reveal" id="competence">
       <h1 style="color: purple" class="text-center">Mes competences.</h1>
 
       <div class="skill-section">
 
-      <div class="skills">
+      <div class="skills reveal">
         <div class="skill gestion">
           <h3 class="text-center">Soft skills</h3>
           <div class="skill-name">
@@ -140,7 +140,7 @@
       </div>
 
 
-       <div class="skills">
+       <div class="skills reveal">
           <h3 class="text-center">Hard skills</h3>
         <div class="skill html">
           <div class="skill-name">
@@ -174,7 +174,7 @@
 
     <!-- section-formulaire contact -->
     <section id="contact">
-      <div class="contenu">
+      <div class="contenu reveal">
         <div class="formulaire contact-container mt-5">
           <h1>Contactez-moi</h1>
           <form action="contact.php" method="post">
@@ -193,7 +193,7 @@
             <button type="submit">Envoyer</button>
           </form>
         </div>
-        <div class="contact-info">
+        <div class="contact-info reveal">
           <p><i class="bi bi-telephone"></i> Téléphone : +237 693 707 677</p>
           <p><i class="bi bi-envelope"></i> Email : charlynjoh0@gmail.com</p>
           <p><i class="bi bi-geo-alt"></i> Adresse : Douala, Bonaberi</p>
@@ -219,5 +219,23 @@
 
   <script src="bootstrap/bootstrap.bundle.min.js"></script>
   <script src="bootstrap/bootstrap-icons/bootstrap-icons.json"></script>
+  <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        function revealElements() {
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const revealTop = reveals[i].getBoundingClientRect().top;
+            const revealPoint = 100;
+
+            if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+            }
+        }
+        }
+
+        window.addEventListener('scroll', revealElements);
+        revealElements();
+    </script>
 </body>
 </html>

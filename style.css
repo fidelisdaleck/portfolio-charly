@@ -6,6 +6,21 @@
     font-family: sans-serif;
 }
 
+/* reveals */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
 .bar-nav a:hover{
     color: rgb(143, 34, 143);
 }
